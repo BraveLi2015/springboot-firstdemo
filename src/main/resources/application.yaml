@@ -1,0 +1,16 @@
+server:
+  port: 8082
+  context-path: /springboot
+  jsp-servlet:
+    init-parameters:
+      development: true
+spring:
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+  profiles:
+    active: pro
+mybatis:
+  mapper-locations: com/baizhi/dao/*DaoMapper.xml
+  type-aliases-package: com.baizhi.entity
